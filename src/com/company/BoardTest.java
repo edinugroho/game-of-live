@@ -47,7 +47,7 @@ class BoardTest {
     @Test
     void count_neighbor_left() {
         Board board = new Board(5,5);
-
-        assertEquals(0,board.count_neighbor(2,2));
+        board.fill(1,1);
+        assertEquals(1,board.count_neighbor(1,2));
     }
 }
