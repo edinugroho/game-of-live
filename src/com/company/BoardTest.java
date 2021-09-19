@@ -25,4 +25,10 @@ class BoardTest {
         board.remove(0,0);
         assertEquals(0, board.get_board()[0][0]);
     }
+
+    @Test
+    void count_neighbor() {
+        Board board = new Board(5,5);
+        assertEquals(0,board.count_neighbor(2,2));
+    }
 }
