@@ -79,4 +79,8 @@ public class Board {
         }
         return neighbor;
     }
+
+    public int rules(int current, int neighbor){
+        return neighbor;
+    }
 }
