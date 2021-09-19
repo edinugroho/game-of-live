@@ -72,4 +72,11 @@ class BoardTest {
         board.fill(0,3);
         assertEquals(1,board.count_neighbor(1,2));
     }
+
+    @Test
+    void count_neighbor_right() {
+        Board board = new Board(5,5);
+        board.fill(1,3);
+        assertEquals(1,board.count_neighbor(1,2));
+    }
 }

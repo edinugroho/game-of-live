@@ -54,11 +54,15 @@ public class Board {
             }
             // top
             if (this.board[x - 1][y] == 1) {
-                this.neighbor += 1;
+                neighbor += 1;
             }
             // top right
             if (this.board[x - 1][y + 1] == 1) {
-                this.neighbor += 1;
+                neighbor += 1;
+            }
+            // right
+            if (this.board[x][y + 1] == 1) {
+                neighbor += 1;
             }
         }
         return neighbor;
