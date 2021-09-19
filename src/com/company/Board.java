@@ -52,6 +52,10 @@ public class Board {
             if (this.board[x - 1][y - 1] == 1) {
                 neighbor += 1;
             }
+            // top
+            if (this.board[x - 1][y] == 1) {
+                this.neighbor += 1;
+            }
         }
         return neighbor;
     }
