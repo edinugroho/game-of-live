@@ -7,11 +7,15 @@ public class Main {
         int game_board[][]  = board.get_board();
 
         System.out.println("1st Generation");
+        board.fill(1,1);
         board.print_board();
 
+        System.out.println("Count Neighbor");
         for (int i = 0; i < board.get_x(); i++){
-            System.out.println("0");
+            for (int j = 0; j < board.get_y(); j++) {
+                System.out.print(board.count_neighbor(i,j));
+            }
+            System.out.println();
         }
-
     }
 }

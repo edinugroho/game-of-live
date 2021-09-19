@@ -43,7 +43,10 @@ public class Board {
 
     public int count_neighbor(int x, int y){
         neighbor = 0;
-
+        // left
+        if (this.board[x][y - 1] == 1){
+            neighbor += 1;
+        }
         return neighbor;
     }
 }
