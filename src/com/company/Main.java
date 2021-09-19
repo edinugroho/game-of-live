@@ -9,6 +9,10 @@ public class Main {
         Board board1 = new Board(10,10);
         int neighbor_board[][]  = board1.get_board();
 
+        Board board2 = new Board(10,10);
+        int next_board[][]  = board2.get_board();
+
+
         System.out.println("1st Generation");
         board.fill(2,1);
         board.fill(2,2);
@@ -19,17 +23,16 @@ public class Main {
         for (int i = 0; i < board.get_x(); i++){
             for (int j = 0; j < board.get_y(); j++) {
                 neighbor_board[i][j] = board.count_neighbor(i,j);
-                System.out.print(board.count_neighbor(i,j));
             }
-            System.out.println();
         }
+        board1.print_board();
 
         System.out.println("Next Generation");
         for (int i = 0; i < board.get_x(); i++) {
             for(int j = 0; j < board.get_y(); j++) {
-                System.out.print(neighbor_board[i][j]);
+                next_board[i][j] = board2.rules(game_board[i][j],neighbor_board[i][j]);
             }
-            System.out.println();
         }
+        board2.print_board();
     }
 }

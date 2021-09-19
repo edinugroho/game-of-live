@@ -81,6 +81,15 @@ public class Board {
     }
 
     public int rules(int current, int neighbor){
-        return neighbor;
+        // Any live cell with fewer than two live neighbours dies, as if by underpopulation.
+        if(current == 1 && neighbor < 2){
+            return 1;
+        }
+        // Any live cell with two or three live neighbours lives on to the next generation
+        else if(current == 0 && (neighbor == 2 || neighbor == 3)){
+            return 1;
+        }else{
+            return current;
+        }
     }
 }
