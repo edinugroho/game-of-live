@@ -14,9 +14,14 @@ public class Main {
 
 
         System.out.println("1st Generation");
-        board.fill(2,1);
-        board.fill(2,2);
-        board.fill(2,3);
+        board.fill(3,4);
+        board.fill(3,5);
+        board.fill(3,6);
+        board.fill(4,4);
+        board.fill(5,4);
+        board.fill(5,5);
+        board.fill(5,6);
+        board.fill(4,6);
         board.print_board();
 
         System.out.println("Count Neighbor");
