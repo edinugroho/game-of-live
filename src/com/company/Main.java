@@ -14,6 +14,7 @@ public class Main {
         board.fill(1,3);
         board.fill(2,3);
         board.fill(2,2);
+        board.fill(2,1);
         board.print_board();
 
         System.out.println("Count Neighbor");
