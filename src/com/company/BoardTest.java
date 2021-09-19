@@ -31,4 +31,10 @@ class BoardTest {
         Board board = new Board(5,5);
         assertEquals(0,board.count_neighbor(2,2));
     }
+
+    @Test
+    void get_x() {
+        Board board = new Board(5,5);
+        assertEquals(5, board.get_x());
+    }
 }
