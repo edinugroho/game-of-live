@@ -18,4 +18,8 @@ public class Board {
     public void fill(int x, int y){
         this.board[x][y] = 1;
     }
+
+    public void remove(int x, int y){
+        this.board[x][y] = 0;
+    }
 }

@@ -18,4 +18,11 @@ class BoardTest {
         board.fill(0,0);
         assertEquals(1, board.get_board()[0][0]);
     }
+
+    @Test
+    void remove() {
+        Board board = new Board(5,5);
+        board.remove(0,0);
+        assertEquals(0, board.get_board()[0][0]);
+    }
 }
