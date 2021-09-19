@@ -8,6 +8,7 @@ public class Main {
 
         System.out.println("1st Generation");
         board.fill(1,1);
+        board.fill(0,1);
         board.print_board();
 
         System.out.println("Count Neighbor");
