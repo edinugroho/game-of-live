@@ -14,4 +14,8 @@ public class Board {
     public int[][] get_board(){
         return this.board;
     }
+
+    public void fill(int x, int y){
+        this.board[x][y] = 1;
+    }
 }
