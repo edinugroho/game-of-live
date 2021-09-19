@@ -81,6 +81,6 @@ public class Board {
     }
 
     public int rules(int current, int neighbor){
-        return neighbor;
+        return current;
     }
 }
