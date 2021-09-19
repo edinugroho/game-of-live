@@ -9,7 +9,9 @@ public class Main {
         System.out.println("1st Generation");
         board.print_board();
 
-//        for (int i = 0; i < game_board.)
+        for (int i = 0; i < board.get_x(); i++){
+            System.out.println("0");
+        }
 
     }
 }

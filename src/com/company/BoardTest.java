@@ -37,4 +37,10 @@ class BoardTest {
         Board board = new Board(5,5);
         assertEquals(5, board.get_x());
     }
+
+    @Test
+    void get_y() {
+        Board board = new Board(5,5);
+        assertEquals(5, board.get_y());
+    }
 }

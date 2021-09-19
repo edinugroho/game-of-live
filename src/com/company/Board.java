@@ -20,6 +20,10 @@ public class Board {
         return this.x;
     }
 
+    public int get_y(){
+        return this.y;
+    }
+
     public void fill(int x, int y){
         this.board[x][y] = 1;
     }
